@@ -2,27 +2,27 @@ body{
     background-color: rgb(34, 34, 34);
     color: white;
     font-family: poppinsregular;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 10px;
 }
 
-header{
+header, .formulario{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
 }
 
 #title{
     flex-direction: column;
-    line-height: 10px;
+    line-height: 50px;
 
 }
 
-li{
+li, .img-profile{
     display:inline-block;
-    margin: 10px;
+    margin: 50px;
 }
 
 a{
@@ -42,7 +42,7 @@ h1{
 main{
     display: flex;
     flex-direction: space-between;
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
 
@@ -69,15 +69,18 @@ p{
     height: 250px; /* Tamanho da imagem */
     border-radius: 50%; /* Torna a imagem redonda */
     border: 10px solid #fff; /* Adiciona uma borda branca */
+    filter: grayscale(100%);
+    object-fit: cover;
 }
 
 section.formulario{
     padding: 80px 4%;
+    margin-top: 45px;
 }
 
 form{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,16 +92,17 @@ form input, form textarea{
     background-color:rgb(59, 59, 59);
     border: 0;
     outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
+    padding: 20px 10px;
+    border-radius: 20px;
     color: #fff;
     font-size: 18px;
+    margin-top:auto
 
 }
 
 form textarea{
     resize: none;
-    max-height: 200px;
+    max-height: 300px;
 }
 
 form .btn-enviar input{
@@ -110,3 +114,9 @@ form .btn-enviar input{
     transition: 2.2s;
 }
 
+section.project{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
